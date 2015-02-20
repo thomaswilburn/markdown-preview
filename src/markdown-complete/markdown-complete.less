@@ -1,0 +1,35 @@
+markdown-complete {
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  display: flex;
+  height: 400px;
+  max-height: 100%;
+  
+  &, &::shadow {
+    
+    .editor {
+      flex: 1;
+      display: flex;
+      background: black;
+      
+      textarea {
+        flex: 1;
+      }
+    }
+    
+    .preview {
+      flex: 1;
+      background: #EEE;
+      box-shadow: inset 4px 4px 16px rgba(0, 0, 0, .4);
+      padding: 16px;
+      overflow: auto;
+    }
+    
+  }
+
+}
